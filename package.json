@@ -1,0 +1,25 @@
+{
+  "name": "writteli-lib",
+  "description": "Core library for writteli",
+  "private": true,
+  "author": "lukaszkups",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "http-server": "^0.12.1",
+    "node-watch": "^0.6.3"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-latest": "^6",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "uglify-js-brunch": "^2"
+  }
+}
