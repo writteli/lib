@@ -5,6 +5,7 @@
   "author": "lukaszkups",
   "version": "0.0.1",
   "repository": "",
+  "license": "MIT",
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production"
