@@ -42,23 +42,7 @@ export default {
       fs.rmdirSync(_path)
     }
   },
-  copyFolder: (_sourcePath, _targetPath) {
-    // return new Promise((resolve, reject) => {
-    //   module.exports.getFiles(path.normalize(_sourcePath)).then(fileList => {
-    //     const readPromises = []
-    //     fileList.forEach(file => {
-    //       readPromises.push(module.exports.readFile(path.normalize(file)))
-    //     })
-    //     Promise.all(readPromises).then(data => {
-    //       const writePromises = []
-    //       data.forEach(file => {
-    //         writePromises.push()
-    //       })
-    //     })
-    //   }).catch(error => {
-    //     reject(error)
-    //   })
-    // })
+  copyFolder (_sourcePath, _targetPath) {
     return new Promise((resolve, reject) => {
       fse.copy(path.normalize(_sourcePath), path.normalize(_targetPath)).then(() => {
         resolve()
