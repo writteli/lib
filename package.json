@@ -7,8 +7,10 @@
   "repository": "",
   "license": "MIT",
   "scripts": {
-    "start": "brunch watch --server",
-    "build": "brunch build --production"
+    "buildjs": "rollup --config rollup.config.js --environment NODE_ENV:production",
+    "watchjs": "rollup --config rollup.config.js --watch",
+    "build": "npm run buildjs",
+    "watch": "npm run watchjs"
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
@@ -16,11 +18,6 @@
     "node-watch": "^0.6.3"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
-    "babel-preset-latest": "^6",
-    "brunch": "^2",
-    "clean-css-brunch": "^2",
-    "uglify-js-brunch": "^2"
+    "rollup": "^2.0.3"
   }
 }
