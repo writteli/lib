@@ -13,14 +13,15 @@ export default class Writteli {
     }
     this.fs = fs
     this.configUrl = options.configUrl
+    this.config = ''
     this.cms = new Config({
       configUrl: options.configUrl,
       fs: options.fs,
       parse: {
         content: options.parseContent,
         template: options.parseTemplate
-      }
+      },
+      config: this.config
     })
-    this.config = this.cms.getConfig()
   }
 }
