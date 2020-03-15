@@ -1,7 +1,17 @@
 {
   "name": "writteli-lib",
   "description": "Core library for writteli",
-  "private": true,
+  "private": false,
+  "homepage": "https://lukaszkups.net",
+  "keywords": [
+    "writteli",
+    "writte.li",
+    "helper library",
+    "content parsing",
+    "static site generator",
+    "static site"
+  ],
+  "main": "dist/index.js",
   "author": "lukaszkups",
   "version": "0.0.1",
   "repository": "",
@@ -18,6 +28,12 @@
     "node-watch": "^0.6.3"
   },
   "devDependencies": {
-    "rollup": "^2.0.3"
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "rollup": "^2.0.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }

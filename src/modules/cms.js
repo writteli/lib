@@ -2,7 +2,7 @@ export default class Cms{
   constructor (options) {
     this.fs = options.fs
     this.configUrl = options.configUrl
-    this.parse = options.parse
+    this.parser = options.parser
     this.config = options.config
   }
 
