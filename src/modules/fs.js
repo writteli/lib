@@ -2,6 +2,7 @@ const path = require('path')
 const fse = require('fs-extra')
 
 export default {
+  $path: path,
   getFiles (_path) {
     return new Promise((resolve, reject) => {
       fs.readdir(path.normalize(_path), (error, files) => {

@@ -7,9 +7,10 @@ export default class Writteli {
     if (new.target === Writteli) {
       throw new Error('Cannot instantiate Base Class')
     }
-    this.parse = {
+    this.parser = {
       content: options.parseContent,
-      template: options.parseTemplate
+      template: options.parseTemplate,
+      async: options.asyncParsing
     }
     this.fs = fs
     this.configUrl = options.configUrl
@@ -18,8 +19,9 @@ export default class Writteli {
       configUrl: options.configUrl,
       fs: options.fs,
       parser: {
-        content: options.contentParser,
-        template: options.templateParser
+        content: this.parser.content,
+        template: this.parser.template,
+        async: this.parser.async
       },
       config: this.config
     })

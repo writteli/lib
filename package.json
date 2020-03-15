@@ -11,9 +11,9 @@
     "static site generator",
     "static site"
   ],
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "author": "lukaszkups",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "",
   "license": "MIT",
   "scripts": {
