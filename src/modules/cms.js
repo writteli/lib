@@ -3,11 +3,11 @@ export default class Cms{
     this.fs = options.fs
     this.configUrl = options.configUrl
     this.parser = options.parser
-    this.config = options.config
     this.cache = {
       listEntryLayouts: {},
       listEntries: {}
     }
+    this.config = ''
   }
 
   getConfig () {

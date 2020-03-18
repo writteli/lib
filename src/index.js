@@ -9,12 +9,10 @@ export default class Writteli {
     }
     this.parser = {
       content: options.parseContent,
-      template: options.parseTemplate,
-      async: options.asyncParsing
+      template: options.parseTemplate
     }
     this.fs = fs
     this.configUrl = options.configUrl
-    this.config = ''
     this.cms = new Cms({
       configUrl: options.configUrl,
       fs: options.fs,
@@ -22,8 +20,7 @@ export default class Writteli {
         content: this.parser.content,
         template: this.parser.template,
         async: this.parser.async
-      },
-      config: this.config
+      }
     })
   }
 }
