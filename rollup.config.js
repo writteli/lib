@@ -5,6 +5,7 @@ import { uglify } from 'rollup-plugin-uglify'
 
 export default {
   input: 'src/index.js',
+  external: ['fs', 'path', 'fs-extra', 'http-server', 'node-watch'],
   plugins: [
     babel({
       exclude: 'node_modules/**'

@@ -13,7 +13,7 @@
   ],
   "main": "dist/index.min.js",
   "author": "lukaszkups",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "",
   "license": "MIT",
   "scripts": {
